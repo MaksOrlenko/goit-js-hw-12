@@ -1,3 +1,27 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,7 +38,6 @@ div {
     display: flex;
     gap: 8px;
 width: 1440px;
-padding: 36px 0px 420px 0px;
 justify-content: center;
 align-items: center;
 background-color: #FFF;
@@ -125,4 +148,37 @@ letter-spacing: 0.04em;
     100% {
         transform: rotate(360deg)
     }
+}
+
+.btn-primary.is-hidden {
+    display: none;
+}
+
+.btn-primary > .loader.is-hidden {
+display: none;
+}
+
+
+.btn-primary {
+    height: 40px;
+    display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background-color: #4E75FF;
+border: none;
+
+cursor: pointer;
+}
+
+.label {
+    color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.04em;
 }
